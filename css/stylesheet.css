@@ -1,0 +1,137 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, sans-serif;
+  --fondo: #faf4e9;
+  --texto: #28252a;
+  --tarjeta: #fffdf9;
+  --acento: #782f49;
+  --borde: #e4d2bd;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+/* Tema claro */
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --fondo: #faf4e9;
+  --texto: #28252a;
+  --tarjeta: #fffdf9;
+  --acento: #782f49;
+  --borde: #e4d2bd;
+}
+
+/* Tema oscuro */
+:root[data-tema="oscuro"] {
+  color-scheme: dark;
+  --fondo: #24212a;
+  --texto: #f3eee8;
+  --tarjeta: #302b35;
+  --acento: #edabc1;
+  --borde: #554a56;
+}
+
+body {
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 0 16px;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+.cabecera {
+  position: relative;
+  padding: 18px 22px 1px;
+  border-radius: 12px 12px 0 0;
+  background: var(--tarjeta);
+  border-top: 5px solid var(--acento);
+  border-bottom: 5px solid var(--acento);
+}
+  
+.titulo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.titulo p {
+  margin-top: 0px;
+}
+
+.boton-tema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--borde);
+  border-radius: 50%;
+  background: var(--fondo);
+  cursor: pointer;
+}
+
+.boton-tema:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 3px;
+}
+
+.indice {
+  margin-top: 3px;
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--fondo);
+}
+
+.indice h2 {
+  margin-top: 0;
+}
+
+a {
+  color: var(--acento);
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.entrada {
+  margin: 25px 0;
+  padding: 20px;
+  border: 5px solid var(--borde);
+  border-radius: 10px;
+  background: var(--tarjeta);
+}
+
+h1,
+h2 {
+  color: var(--acento);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.boton-tema img {
+    width: 24px;
+    height: 24px;
+}
+
+.boton-tema img[hidden] {
+  display: none;
+}
+
+figcaption,
+.volver,
+.pie {
+  font-size: 14px;
+}
+
+.pie {
+  padding: 10px 20px;
+  border-top: 1px solid var(--borde);
+  color: var(--texto);
+}

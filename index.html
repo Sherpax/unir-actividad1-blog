@@ -1,15 +1,150 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiBlog</title>
+    <meta name="color-scheme" content="light dark" />
+    <title>Entre butacas</title>
     <link rel="stylesheet" href="css/stylesheet.css" />
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
+    <header class="cabecera">
+      <div class="titulo">
+        <div>
+          <h1>Entre butacas</h1>
+          <p>Un blog sobre ir al cine</p>
+        </div>
+        <button
+          class="boton-tema"
+          type="button"
+          title="Cambiar tema"
+          aria-pressed="false"
+        >
+          <img
+            id="icon-claro"
+            alt="Modo claro"
+            src="img/icons/light_mode_24dp.svg"
+            hidden
+          />
+          <img
+            id="icon-oscuro"
+            alt="Modo oscuro"
+            src="img/icons/dark_mode_24dp.svg"
+            hidden
+          />
+        </button>
+      </div>
+      <nav class="indice" aria-labelledby="indice">
+        <h2 id="indice" tabindex="-1">Entradas</h2>
+        <ul>
+          <li><a href="#butacas">Dónde sentarse en el cine</a></li>
+          <li><a href="#proyeccion">Qué hay en la cabina de proyección</a></li>
+          <li><a href="#aire-libre">Una sesión de cine al aire libre</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div>
+      <article class="entrada" aria-labelledby="butacas">
+        <h2 id="butacas" tabindex="-1">Dónde sentarse en el cine</h2>
+        <figure>
+          <img
+            src="img/butacas.jpg"
+            width="1280"
+            height="720"
+            alt="Filas de butacas vacías en una sala de cine"
+          />
+          <figcaption>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Patio_de_butacas_del_Teatro_Cine_Regio.JPG"
+              >Cosasdebeas</a
+            >
+            <span class="separador">·</span>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
+          </figcaption>
+        </figure>
+        <p>
+          A mí me gusta sentarme por el centro de la sala. Desde ahí se ve bien
+          la pantalla y no tengo que mover mucho la cabeza.
+        </p>
+        <p>
+          Si la película es larga, suelo buscar un sitio cerca del pasillo. Así
+          es más fácil salir si hace falta.
+        </p>
+        <a class="volver" href="#indice">Volver al índice</a>
+      </article>
+
+      <article class="entrada" aria-labelledby="proyeccion">
+        <h2 id="proyeccion" tabindex="-1">
+          Qué hay en la cabina de proyección
+        </h2>
+        <figure>
+          <img
+            src="img/proyector.jpg"
+            width="500"
+            height="667"
+            loading="lazy"
+            alt="Proyector de cine de 35 mm en funcionamiento"
+          />
+          <figcaption>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Projector_running.jpg"
+              >Foto de christian razukas</a
+            >
+            <span class="separador">·</span>
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/"
+              >CC BY-SA 2.0</a
+            >
+          </figcaption>
+        </figure>
+        <p>
+          La cabina de proyección está detrás de las últimas filas. Es desde
+          allí desde donde se proyecta la película hacia la pantalla.
+        </p>
+        <p>
+          Antes se usaban rollos de película. Ahora la mayoría de las
+          proyecciones son digitales.
+        </p>
+        <a class="volver" href="#indice">Volver al índice</a>
+      </article>
+
+      <article class="entrada" aria-labelledby="aire-libre">
+        <h2 id="aire-libre" tabindex="-1">Una sesión de cine al aire libre</h2>
+        <figure>
+          <img
+            src="img/violeta_parra.jpg"
+            width="1280"
+            height="720"
+            loading="lazy"
+            alt="Filas de sillas frente a la pantalla exterior del Auditorio Violeta Parra"
+          />
+          <figcaption>
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Vuelve_el_cine_de_verano_al_Auditorio_Violeta_Parra_y_al_parque_de_Comillas_10.jpg"
+              >Foto de Diario de Madrid</a
+            >
+            <span class="separador">·</span>
+            <a href="https://creativecommons.org/licenses/by/4.0/"
+              >CC BY 4.0</a
+            >
+          </figcaption>
+        </figure>
+        <p>
+          El cine al aire libre es un buen plan para las noches de verano. La
+          gente lleva algo para sentarse y busca sitio frente a la pantalla.
+        </p>
+        <p>
+          Conviene llegar pronto para sentarse con los amigos. También llevaría
+          una chaqueta, por si refresca.
+        </p>
+        <a class="volver" href="#indice">Volver al índice</a>
+      </article>
+    </div>
+
+    <footer class="pie">
+      <p class="columna">Entre butacas · Actividad 1</p>
+    </footer>
   </body>
-
 </html>
